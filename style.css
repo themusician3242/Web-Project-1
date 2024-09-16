@@ -1,0 +1,240 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap');
+
+/* Body & Webpage Styling */
+body {
+    background-image: url("https://nftnow.com/wp-content/uploads/2023/07/F2XvkDXWMAAWemS.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+body::before {
+    content: "";
+    margin: auto; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: greenyellow;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: "Nerko One", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 0 0 10px lightsteelblue;
+    font-style: italic;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: Anton, sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: 75px;
+    left: 10px;
+    margin-left: 10%;
+}
+
+p {
+    font-family: "Playpen Sans", sans-serif;
+    text-align: center;
+    color: darkblue;
+    margin-left: auto;
+    margin-right: auto;    
+    max-width: 75%;
+}
+/* Size-Responsive Webpage Styling */
+@media (max-width: 1200px) {
+    body::before {
+        width: 100%;
+    }
+    h3 {
+        margin-left: auto;
+    }
+}
+
+/* Header Styling */
+#web-project-1-header {
+    background-image: url("Images/web-project-1-img-1.png");
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: relative;
+    border: solid green 5px;
+    box-shadow: 0 0 20px green;
+    text-align: center;
+    margin: auto;
+}
+/* Size-Responsive Header Styling */
+@media (min-width: 1200px) {
+    #web-project-1-header {
+        width: 75%;
+    }
+}
+.header-hover-widgets {
+    position: relative;
+    top: 105%;
+    font-family: "Lilita One", sans-serif;
+    font-size: 35px;
+    margin-left: 5%;
+    right: 10px;
+}
+.header-hover-widgets:hover {
+    color: darkgreen;
+}
+
+.header-hover-widgets-2:hover {
+    color: darkgreen;
+}
+
+/* Section 1 Styling: */
+#headline {
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: "Playwrite CU", sans-serif;
+    font-style: italic;
+    color: rgba(4, 187, 211, 0.842);
+    text-align: center;
+    text-shadow: 0 -25px 25px yellow, 0 0 10px darkorange, 0 5px 2px maroon;
+}
+#drink-display-image {
+    background-image: url("Images/web-project-1-image-2.jpeg");
+    border: solid 10px black;
+    margin: auto;
+    width: 800px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px green;
+}
+
+/* Section 2 Styling */
+.section-2-header {
+    font-size: 20px;
+}
+
+.section-2-list {
+    font-family: "Playpen Sans", sans-serif;
+    list-style-image: url("Images/wb-1-list-style-image.png");
+    list-style-position: outside;
+    margin-left: 10%;
+}
+@media (max-width: 1200px) {
+    .section-2-list {
+        margin-left: auto;
+    }
+}
+
+/* Section 3 Styling */
+#section-3-slideshow {
+    margin: auto;
+    height: 500px;
+    border: solid 5px green;
+    max-width: 75%;
+    text-align: center;
+
+    background-image: url("Images/procedure-images/procedure-image-default.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section-3-slideshow::before {
+    content: "";
+    position: absolute;
+    z-index: 0; 
+    right: 13%;
+    width: 74%;
+    height: 500px;
+    background-color: black;
+    opacity: 33%;
+}
+
+.section-3-buttons {
+    position: relative;
+    top: 90%;
+    color: lightgreen;
+    background-color: darkgreen;
+    width: 100px;
+    height: 30px;
+    border: outset 1px black;
+    box-shadow: 0 0 5px black;
+    z-index: 2;
+}
+
+.section-3-buttons:hover {
+    color: white;
+    font-style: italic;
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    border: inset 1px green;
+    text-shadow: 0 0 5px darkgreen;
+    box-shadow: 0 0 5px green;
+}
+
+#view-steps-button {
+    width: 200px;
+}
+#section-3-header {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+.section-3-p {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 10px black;
+    z-index: 2;
+}
+
+/* Styling The Section 3 Menu */
+#section-3-menu {
+    text-align: center;
+}
+.section-3-menu-buttons {
+    min-width: 75%;
+    background-color: rgb(20, 20, 20);
+    color: lightgrey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    display: none;
+}
+.section-3-menu-buttons:hover {
+    background-color: grey;
+    color: white;
+}
+
+/* Section 4 & 5 Styling */
+#section-4-image {
+    width: 60%;
+    border: solid 10px black;
+    margin: auto;
+    box-shadow: 0 0 20px green;
+}
+
+#section-5-image {
+    width: 70%;
+    border: solid 10px black;
+    margin: auto;
+    box-shadow: 0 0 20px green;
+}
